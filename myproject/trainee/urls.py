@@ -1,6 +1,9 @@
 from django.urls import path
-from trainee.views import trainee_main,sec_fun
+from . import views
+
 urlpatterns = [
-    path('',trainee_main),
-    path('sec/',sec_fun),
+    path('show/', views.trainee_list, name='trainee_list'),
+    path('login/', views.inserttrainee, name='insert_trainee'),
+    path('delete/<int:id>/', views.deletetrainee, name='delete_trainee'),
+    path('Activity/<int:id>/', views.xorActivity, name='Activity'),
 ]

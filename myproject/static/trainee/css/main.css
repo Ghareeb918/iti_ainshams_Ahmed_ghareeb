@@ -1,0 +1,74 @@
+.body{
+    background-color: #5DBE4D;
+}
+.loginsc{
+    background-color: white;
+    width: 300px;
+    height:400px;
+    padding-top: 100px;
+    padding: 50px;
+    margin-top: 100px;
+    margin-left: 400px;
+    box-shadow: 0px 4px 15px  rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.input{
+    background-color: gainsboro;
+    width: 200px;
+    height:50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-width: 0px;
+    padding-left: 20px;
+    caret-color: gray;
+    line-height: 10px;
+    font-size: 15px;
+}
+.input:focus {
+    outline: none;
+  border: 1px solid rgb(160, 160, 160); 
+  box-shadow: 0 0 5px rgba(145, 145, 145, 0.5); 
+}
+
+.button{
+ background-color: gainsboro;
+    width: 223px;
+    height:45px;
+    margin-left: 50px;
+    margin-top: 20px;   
+    border-width: 1px;
+    background-color: #5DBE4D;
+    color:aliceblue
+
+}
+
+.Done {
+    text-align: center;
+    color: #5DBE4D;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.informations {
+    background-color: gainsboro;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.delete-btn {
+    background-color: #e74c3c;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
+}

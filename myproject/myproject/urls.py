@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.urls import path,include
 from myuser.views import home
 from tracks.views import trackwelcome
-from trainee.views import trainee_main
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home),

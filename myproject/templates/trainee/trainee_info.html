@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'trainee/css/main.css' %}">
+{% block content %}
+{% if user_data %}
+<body class="body"> 
+<div class="loginsc">
+
+    <div class="user-info">
+        <h2 class="Done">Done</h2>
+        <p class = "informations"><strong>First Name:</strong> {{ user_data.first_name }}</p>
+        <p class = "informations"><strong>Last Name:</strong> {{ user_data.last_name }}</p>
+        <p class = "informations"><strong>Email:</strong> {{ user_data.email }}</p>
+    <form action="{% url 'delete_trainee' user_data.id %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="button delete-btn">Delete</button>
+    </form>
+    
+</div>
+</div>
+
+<br><h3 id="msg" style="margin-left: 570px;"></h3>
+</body>
+{% endif %}
+{% endblock %}

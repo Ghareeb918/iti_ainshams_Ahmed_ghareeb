@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'trainee/css/main.css' %}">
+</head>
+{% block content %}
+<body class="body">
+    <script src="./task 5 =.js"></script>
+    <div class="loginsc">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input type="text" name="first_name" class="input" placeholder="first name" required>  
+                <br>
+                <input type="text" name="last_name" class="input" placeholder="last name" required>  
+                <br>
+                <input type="email" name="email" class="input" placeholder="email" required>  
+                <br>
+                <input type="password" name="password" class="input" placeholder="password" required>  
+                <br>
+                <button type="submit" class="button">Create</button>
+                <br>
+        </form>
+    </div>
+    <br><h3 id="msg" style="margin-left: 570px;"></h3>
+</body>
+{% endblock %}
+</html>
